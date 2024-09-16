@@ -1,0 +1,60 @@
+@import "../../../app/styles/mixins";
+
+.navigation {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.logo {
+  cursor: pointer;
+  height: 80px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.list {
+  display: none;
+
+  ul {
+    display: flex;
+    gap: 20px;
+
+    li {
+      cursor: pointer;
+    }
+  }
+}
+
+.faq {
+  display: none;
+}
+
+.burger {
+  cursor: pointer;
+}
+
+@include desktop {
+  .list {
+    display: block;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .faq {
+    display: block;
+  }
+}

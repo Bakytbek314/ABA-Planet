@@ -1,0 +1,39 @@
+//tags
+
+.h1 {
+  font-size: clamp(32px, 1.286rem + 3.571vw, 72px);
+}
+
+.bigP {
+  font-size: clamp(20px, 1.179rem + 0.357vw, 24px);
+}
+
+.mediumP {
+  font-size: clamp(16px, 0.893rem + 0.536vw, 22px);
+}
+
+.smallP {
+  font-size: clamp(14px, 0.768rem + 0.536vw, 20px);
+}
+
+//color
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+//weight
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semiBold {
+  font-weight: 600;
+}

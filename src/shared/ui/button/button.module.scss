@@ -1,0 +1,42 @@
+@import "../../../app/styles/mixins";
+
+.btn {
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.small {
+  width: 100px;
+  padding: 10px 0;
+}
+
+.large {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.red {
+  background: var(--color-red);
+  color: var(--color-grey);
+}
+
+.grey {
+  background: var(--color-grey);
+  color: var(--color-black);
+}
+
+.green {
+  background: var(--color-green);
+  color: var(--color-grey);
+}
+
+@include desktop {
+  .large {
+    width: 230px;
+  }
+
+  .btn {
+    border-radius: 10px;
+  }
+}

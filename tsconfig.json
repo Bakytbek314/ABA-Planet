@@ -1,0 +1,21 @@
+//{
+//  "files": [],
+//  "references": [
+//    { "path": "./tsconfig.app.json" },
+//    { "path": "./tsconfig.node.json" }
+//  ]
+//}
+{
+  "compilerOptions": {
+    "tsx": "react",
+    "baseUrl": "./src",
+    "paths": {
+      "@TextType": ["shared/ui/textType/*"],
+      "@shared/*": ["shared/*"],
+      "@widgets/*": ["widgets/*"]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
