@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "composite": true,
+    "noEmit": false,
     "types": ["node"],
     "baseUrl": ".",
     "paths": {
