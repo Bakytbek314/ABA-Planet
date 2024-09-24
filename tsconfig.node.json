@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "composite": true,
-    "skipLibCheck": true,
     "target": "ES2022",
     "lib": ["ES2023"],
     "module": "ESNext",
@@ -19,6 +17,10 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
+    /* Дополнительно для node проектов */
+    "esModuleInterop": true,
+    "resolveJsonModule": true
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts", "src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules", "dist"]
 }
