@@ -1,4 +1,3 @@
-// import {FC} from "react";
 import {TextTypeProps} from "./textType.props.ts";
 import classNames from "classnames";
 import styles from "./textType.module.scss";
@@ -8,7 +7,8 @@ const TextType= ({
     weight = "regular",
     className,
     color,
-    children
+    children,
+    align
                               }: TextTypeProps) => {
 
     const Tags = {
@@ -27,6 +27,7 @@ const TextType= ({
         styles[variant],
         styles[weight],
         styles[color],
+        styles[align],
         className,
     );
 

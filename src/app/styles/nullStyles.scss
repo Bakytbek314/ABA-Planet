@@ -4,8 +4,21 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: lora;
+  src: url(/public/fonts/Lora.ttf);
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: lora, serif;
+}
+
+header {
+  padding: 3px 0;
+}
+
+footer {
+  padding: 40px 0;
 }
 
 ul, li {

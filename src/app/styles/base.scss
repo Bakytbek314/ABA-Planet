@@ -3,7 +3,7 @@
 .container {
   width: 350px;
   margin: 0 auto;
-  border: 0.1px solid red;
+  //border: 0.1px solid red;
 
   @include tablet {
     width: 720px;

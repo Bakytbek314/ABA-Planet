@@ -1,21 +1,18 @@
-//{
-//  "files": [],
-//  "references": [
-//    { "path": "./tsconfig.app.json" },
-//    { "path": "./tsconfig.node.json" }
-//  ]
-//}
 {
   "compilerOptions": {
-    "tsx": "react",
-    "baseUrl": "./src",
+    "types": ["node"],
+    "baseUrl": ".",
     "paths": {
-      "@TextType": ["shared/ui/textType/*"],
-      "@shared/*": ["shared/*"],
-      "@widgets/*": ["widgets/*"]
-    }
+      "@/*": ["/src/*"],
+      "@app/*": ["/src/app/*"],
+      "@entities/*": ["/src/entities/*"],
+      "@features/*": ["/src/features/*"],
+      "@pages/*": ["/src/pages/*"],
+      "@shared/*": ["/src/shared/*"],
+      "@widgets/*": ["/src/widgets/*"],
+      "@TextType": ["/src/shared/ui/textType"]
+    },
   },
-  "include": [
-    "src/**/*"
-  ]
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

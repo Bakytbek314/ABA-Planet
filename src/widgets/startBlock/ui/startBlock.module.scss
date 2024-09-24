@@ -1,0 +1,99 @@
+@import "../../../app/styles/mixins.scss";
+
+.start_block_section {
+  padding: 40px 0;
+  position: relative;
+}
+
+.start_block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.img {
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.content_text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text {
+  p {
+    line-height: 120%;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.circles_photo {
+  display: none;
+}
+
+@include tablet {
+  .start_block {
+    flex-direction: row;
+  }
+
+  .title {
+
+    h1 {
+      line-height: 85%;
+    }
+  }
+
+  .content_text {
+    width: 700px;
+    gap: 15px;
+  }
+
+  .buttons {
+    gap: 15px;
+  }
+}
+
+@include desktop {
+  .start_block_section {
+    padding: 40px 0 0 0;
+    height: calc(100vh - 80px);
+  }
+
+  .content_text {
+    width: 2000px;
+    gap: 40px;
+
+    h1 {
+      line-height: 120%;
+    }
+  }
+
+  .buttons {
+    flex-direction: row;
+  }
+
+  .circles_photo {
+    display: inline;
+    position: absolute;
+    right: 0;
+    bottom: -21px;
+    z-index: -1;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -10,14 +10,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "2gis-maps": "^3.7.4",
     "classnames": "^2.5.1",
+    "framer-motion": "^11.5.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "sass": "^1.77.8"
+    "react-icons": "^5.3.0",
+    "sass": "^1.77.8",
+    "swiper": "^11.1.14"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
-    "@types/node": "^22.5.0",
+    "@types/node": "^22.5.5",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",

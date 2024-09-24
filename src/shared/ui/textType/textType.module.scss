@@ -1,7 +1,15 @@
 //tags
 
 .h1 {
-  font-size: clamp(32px, 1.286rem + 3.571vw, 72px);
+  font-size: clamp(32px, 1.197rem + 3.67vw, 72px);
+}
+
+.h2 {
+  font-size: clamp(24px, 1.018rem + 2.202vw, 48px);
+}
+
+.h3 {
+  font-size: clamp(20px, 0.808rem + 2.018vw, 42px);
 }
 
 .bigP {
@@ -18,11 +26,22 @@
 
 //color
 .red {
-  color: red;
+  color: var(--color-red);
 }
 
 .blue {
-  color: blue;
+  color: var(--color-blue);
+}
+
+.white {
+  color: var(--color-white);
+}
+
+.grey {
+  color: var(--color-grey-dark);
+}
+.black {
+  color: var(--color-black);
 }
 
 //weight
@@ -36,4 +55,17 @@
 
 .semiBold {
   font-weight: 600;
+}
+
+//align
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
 }

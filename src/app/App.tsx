@@ -1,12 +1,16 @@
+import Header from "../widgets/header/ui/header.tsx";
+import HomePage from "../pages/homePage/homePage.tsx";
+import Footer from "../widgets/footer/ui/footer.tsx";
 import "./styles/global.scss";
-import Header from "@widgets/header/ui/header.tsx";
 
 
 const App = () => {
 
   return (
     <>
-       <Header/>
+        <Header/>
+        <HomePage/>
+        <Footer/>
     </>
   )
 }
