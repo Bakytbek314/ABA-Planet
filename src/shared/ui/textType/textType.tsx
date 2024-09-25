@@ -26,8 +26,8 @@ const TextType= ({
     const classNamedGenerator = classNames(
         styles[variant],
         styles[weight],
-        styles[color],
-        styles[align],
+        color && styles[color],
+        align && styles[align],
         className,
     );
 

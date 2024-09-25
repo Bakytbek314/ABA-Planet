@@ -5,8 +5,8 @@ import styles from "./button.module.scss"
 const Button = ({size, color, children, onClick, className}: ButtonProps ) => {
 
     const classNameGenerator = classNames(
-        styles[size],
-        styles[color],
+        size && styles[size],
+        color && styles[color],
         styles["btn"],
         className
     )
