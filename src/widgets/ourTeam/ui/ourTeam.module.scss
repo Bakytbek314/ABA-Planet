@@ -1,0 +1,21 @@
+.our_team_section {
+  padding: 40px 0;
+}
+
+.our_team {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.team_cards {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,66 @@
+@import "../../../app/styles/mixins.scss";
+
+.our_contacts_section {
+  padding: 40px 0;
+  background-color: var(--color-dark-blue);
+}
+
+.our_contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.phone_number, .address {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.number, .location {
+  padding: 15px 10px;
+  border-radius: 20px;
+  background-color: var(--color-blue);
+}
+
+.social_icons {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+
+  svg {
+    color: var(--color-white);
+    font-size: 80px;
+  }
+}
+
+.map {
+  width: 100%;
+  margin-top: 30px;
+  height: 300px;
+}
+
+@include  desktop {
+  .our_contacts_section {
+    height: 100vh;
+  }
+
+  .contacts_location {
+    display: flex;
+    gap: 30px;
+  }
+
+  .contacts {
+    width: 50%;
+  }
+
+  .map {
+    height: 500px;
+  }
+}

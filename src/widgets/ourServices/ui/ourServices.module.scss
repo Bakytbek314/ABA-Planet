@@ -1,0 +1,81 @@
+@import "../../../app/styles/mixins.scss";
+
+.our_services_section {
+  background-color: var(--color-dark-blue);
+  padding: 40px 0;
+}
+
+.our_services {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+.services_info_buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  button {
+    position: relative;
+
+    span {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 45px;
+      color: var(--color-grey-dark);
+    }
+  }
+}
+
+.arrow_icon_open, .arrow_icon_close {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+
+.arrow_icon_open {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease-in;
+}
+.arrow_icon_close {
+  transition: transform 0.2s ease-in;
+}
+.services_info {
+  padding: 20px 10px;
+  background-color: var(--color-grey);
+  border-radius: 0 0 10px 10px;
+  margin-top: -20px;
+}
+
+@include desktop {
+  .services_info_buttons {
+    width: 48%;
+    height: 100%;
+  }
+
+  .active_btn {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+
+
+  }
+
+  .services_info {
+    width: 48%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-top: 108px;
+    border-radius: 10px;
+  }
+
+  .arrow_icon_open {
+    transform: rotate(-90deg);
+    transition: transform 0.2s ease-in;
+  }
+}

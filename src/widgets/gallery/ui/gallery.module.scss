@@ -1,0 +1,40 @@
+@import "../../../app/styles/mixins.scss";
+
+.gallery_section {
+  padding: 40px 0;
+  background-color: var(--color-yellow);
+}
+
+.title {
+  margin-bottom: 30px;
+}
+
+.slider {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+@include tablet {
+  .slider {
+    height: 400px;
+  }
+}
+
+@include desktop {
+  .gallery_section {
+    padding: 20px 0;
+    height: 100vh;
+  }
+
+  .slider {
+    height: 600px;
+  }
+}

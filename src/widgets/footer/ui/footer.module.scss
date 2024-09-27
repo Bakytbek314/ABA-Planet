@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.title {
+  color: var(--color-blue);
+  max-width: min(60%, 320px);
+
+  span {
+    color: #06AF61;
+  }
+}
+
+.contacts {
+
+  p {
+    line-height: 150%;
+  }
+
+  svg {
+    color: var(--color-blue);
+  }
+}

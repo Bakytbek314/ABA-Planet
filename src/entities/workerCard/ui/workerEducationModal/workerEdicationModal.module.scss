@@ -1,0 +1,52 @@
+@import "../../../../app/styles/mixins.scss";
+
+.worker_education_modal_popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.education_license {
+  width: 350px;
+  height: 200px;
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 40px;
+    color: var(--color-red);
+    cursor: pointer;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@include tablet {
+  .education_license {
+    width: 750px;
+    height: 420px;
+
+    svg {
+      top: -30px;
+      right: -30px;
+    }
+  }
+}
+
+@include desktop {
+  .education_license {
+    width: 1000px;
+    height: 600px;
+  }
+}
