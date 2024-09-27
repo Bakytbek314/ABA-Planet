@@ -1,6 +1,6 @@
-import Header from "../widgets/header/ui/header.tsx";
-import HomePage from "../pages/homePage/homePage.tsx";
-import Footer from "../widgets/footer/ui/footer.tsx";
+import Header from "../widgets/header/ui/header";
+import HomePage from "../pages/homePage/homePage";
+import Footer from "../widgets/footer/ui/footer";
 import "./styles/global.scss";
 
 

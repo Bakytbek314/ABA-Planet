@@ -1,5 +1,5 @@
-import TextType from "../../../shared/ui/textType/textType.tsx";
-import Button from "../../../shared/ui/button/button.tsx";
+import TextType from "../../../shared/ui/textType/textType";
+import Button from "../../../shared/ui/button/button";
 import styles from "./startBlock.module.scss";
 
 import Photo from "../../../shared/assets/images/startBlockPhoto.png";

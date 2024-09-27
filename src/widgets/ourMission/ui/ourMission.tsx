@@ -1,4 +1,4 @@
-import TextType from "../../../shared/ui/textType/textType.tsx";
+import TextType from "../../../shared/ui/textType/textType";
 import styles from "./ourMission.module.scss";
 
 

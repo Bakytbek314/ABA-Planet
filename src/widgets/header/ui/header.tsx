@@ -1,6 +1,6 @@
 import {useState, FC,} from "react";
-import {useBlockedScroll} from "../../../shared/lib/useBlockedScroll.ts";
-import BurgerMenu from "./burgerMenu/burgerMenu.tsx";
+import {useBlockedScroll} from "../../../shared/lib/useBlockedScroll";
+import BurgerMenu from "./burgerMenu/burgerMenu";
 
 import styles from "./header.module.scss";
 import Logo from "../../../shared/assets/icons/logo.svg";
