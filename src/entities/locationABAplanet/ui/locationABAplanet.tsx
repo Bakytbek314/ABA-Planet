@@ -1,6 +1,5 @@
 import {useEffect} from "react";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
+// @ts-ignore
 import DG from "2gis-maps";
 
 const LocationABAplanet = () => {

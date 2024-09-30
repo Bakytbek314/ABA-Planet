@@ -1,11 +1,9 @@
 import {useState, FC,} from "react";
 import {useBlockedScroll} from "../../../shared/lib/useBlockedScroll";
 import BurgerMenu from "./burgerMenu/burgerMenu";
-
+import { RxHamburgerMenu } from "react-icons/rx";
+import {LogoIcon} from "../../../shared/assets/icons/logo";
 import styles from "./header.module.scss";
-import Logo from "../../../shared/assets/icons/logo.svg";
-import Burger from "../../../shared/assets/icons/burger.svg";
-import BurgerIsOpen from "../../../shared/assets/icons/burgerIsOpen.svg";
 
 const Header: FC = () => {
 
@@ -27,7 +25,7 @@ const Header: FC = () => {
                 <div className="container">
                     <nav className={styles.navigation}>
                         <div className={styles.logo}>
-                            <img src={Logo} alt="ABA planet"/>
+                            <LogoIcon />
                         </div>
                         <div className={styles.links}>
                             <div className={styles.list}>
@@ -39,10 +37,7 @@ const Header: FC = () => {
                             </div>
                         </div>
                         <div className={styles.burger} onClick={onMenuOpen}>
-                            <img
-                                src={isMenuOpen ? BurgerIsOpen : Burger}
-                                alt="Menu"
-                            />
+                            <RxHamburgerMenu />
                         </div>
                     </nav>
                 </div>

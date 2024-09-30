@@ -3,9 +3,8 @@ import {motion} from "framer-motion";
 import TextType from "../../../shared/ui/textType/textType";
 import Button from "../../../shared/ui/button/button";
 import {servicesInfo} from "../../../shared/constants/servicesInfo";
+import { IoChevronDownSharp } from "react-icons/io5";
 import styles from "./ourServices.module.scss";
-
-import ArrowIcon from "../../../shared/assets/icons/arrow.svg";
 
 const OurServices = () => {
 
@@ -45,9 +44,7 @@ const OurServices = () => {
                                         {service.service}
                                     </TextType>
                                     <span>{service.price}</span>
-                                    <img
-                                        src={ArrowIcon}
-                                        alt="arrow"
+                                    <IoChevronDownSharp
                                         className={openedServiceIndex === service.id
                                             ? styles.arrow_icon_open
                                             : styles.arrow_icon_close}

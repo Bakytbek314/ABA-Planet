@@ -1,9 +1,9 @@
 declare module "*.module.css";
-declare module "*.module.scss";
+// declare module "*.module.scss";
 
-declare module '*.scss' {
-    const content: { [className: string]: string };
-    export default content;
+declare module '*.module.scss' {
+    const classes: { readonly [key: string]: string }
+    export default classes
 }
 
 declare module "*.png" {
@@ -22,6 +22,6 @@ declare module "*.jpeg" {
 }
 
 declare module '*.svg' {
-    const content: any;
+    const content: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
     export default content;
 }

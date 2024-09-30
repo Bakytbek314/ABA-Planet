@@ -1,10 +1,10 @@
 import {useState} from "react";
+import {useBlockedScroll} from "../../../shared/lib/useBlockedScroll";
 import WorkerCard from "../../../entities/workerCard/ui/workerCard.tsx";
 import WorkerEducationModal from "../../../entities/workerCard/ui/workerEducationModal/workerEducationModal.tsx";
 import TextType from "../../../shared/ui/textType/textType.tsx";
 import {workerInfo} from "../../../shared/constants/workerInfo.ts";
 import styles from "./ourTeam.module.scss";
-import {useBlockedScroll} from "../../../shared/lib/useBlockedScroll";
 
 const OurTeam = () => {
 

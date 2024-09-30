@@ -1,6 +1,6 @@
+import {WorkerCardProps} from "./workerCard.props.ts";
 import TextType from "../../../shared/ui/textType/textType.tsx";
 import Button from "../../../shared/ui/button/button.tsx";
-import {WorkerCardProps} from "./workerCard.props.ts";
 import styles from "./workerCard.module.scss";
 
 const WorkerCard = ( { name, photo, description, onModalOpen, education }: WorkerCardProps ) => {
@@ -14,7 +14,7 @@ const WorkerCard = ( { name, photo, description, onModalOpen, education }: Worke
                 />
             </div>
             <div className={styles.worker_info}>
-                <TextType variant={"h2"}>{name}</TextType>
+                <TextType variant={"h3"}>{name}</TextType>
                 <TextType variant={"smallP"}>
                     {description}
                 </TextType>
