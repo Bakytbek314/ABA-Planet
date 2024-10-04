@@ -46,6 +46,15 @@
 }
 
 @include desktop {
+  .logo {
+    width: 100px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   .list {
     display: block;
   }

@@ -29,19 +29,15 @@ const StartBlock = () => {
                                 команда стремится обеспечить индивидуальный уход и поддержку, чтобы помочь вашему малышу
                                 процветать
                             </TextType>
-
                         </div>
                         <div className={styles.buttons}>
-                            <Button size={"full"} color={"green"}>
-                                <TextType variant={"mediumP"}>
-                                    Цены
-                                </TextType>
-                            </Button>
-                            <Button size={"full"} color={"grey"}>
-                                <TextType variant={"mediumP"}>
-                                    Записаться на прием
-                                </TextType>
-                            </Button>
+                            <a href="https://wa.me/996500726660" target="_blank">
+                                <Button size={"full"} color={"green"}>
+                                    <TextType variant={"mediumP"}>
+                                        Записаться на прием
+                                    </TextType>
+                                </Button>
+                            </a>
                         </div>
                     </div>
                 </div>

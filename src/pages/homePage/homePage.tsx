@@ -11,8 +11,8 @@ const HomePage = () => {
             <StartBlock/>
             <OurServices/>
             <OurTeam/>
-            <OurMission/>
             <Gallery/>
+            <OurMission/>
             <OurContacts/>
         </main>
     );

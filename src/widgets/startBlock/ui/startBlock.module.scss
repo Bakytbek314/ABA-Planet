@@ -33,12 +33,6 @@
   }
 }
 
-.buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
 .circles_photo {
   display: none;
 }
@@ -66,6 +60,11 @@
 }
 
 @include desktop {
+
+  .img {
+    margin-top: 32px;
+  }
+
   .start_block_section {
     padding: 40px 0 0 0;
     height: calc(100vh - 80px);

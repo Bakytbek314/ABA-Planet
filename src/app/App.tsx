@@ -1,7 +1,8 @@
-import {Suspense, lazy} from "react";
+import {Suspense, lazy, useRef} from "react";
 import Header from "../widgets/header/ui/header";
-const HomePage = lazy( () => import("../pages/homePage/homePage"));
 import Footer from "../widgets/footer/ui/footer";
+const HomePage = lazy(() => import("../pages/homePage/homePage"));
+
 import "./styles/global.scss";
 
 
@@ -11,7 +12,7 @@ const App = () => {
         <>
             <Header/>
             <Suspense fallback={<h3>Loading...</h3>}>
-                <HomePage/>
+                <HomePage />
             </Suspense>
             <Footer/>
         </>

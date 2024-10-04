@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useRef, useState} from "react";
 import {useBlockedScroll} from "../../../shared/lib/useBlockedScroll";
 import WorkerCard from "../../../entities/workerCard/ui/workerCard.tsx";
 import WorkerEducationModal from "../../../entities/workerCard/ui/workerEducationModal/workerEducationModal.tsx";
@@ -36,7 +36,7 @@ const OurTeam = () => {
                                     <WorkerCard
                                         id={worker.id}
                                         name={worker.name}
-                                        photo={worker.photo}
+                                        photo={worker.photo as string}
                                         description={worker.description}
                                         education={worker.education}
                                         onModalOpen={onModalOpen}

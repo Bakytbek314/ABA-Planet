@@ -2,10 +2,7 @@ import {SwiperSlide} from "swiper/react";
 import SwiperContainer from "../../../features/swiperContainer/ui/swiperContainer";
 import TextType from "../../../shared/ui/textType/textType";
 import styles from "./gallery.module.scss";
-
-import logoRoomPhoto from "@shared/assets/images/logoped.jpg";
-import sensorRoomPhoto from "@shared/assets/images/sensorInteg.jpg";
-import receptionPhoto from "@shared/assets/images/reception.jpg";
+import {interiorPhotos} from "../../../shared/constants/interiorPhotos.ts";
 const Gallery = () => {
     return (
         <section className={styles.gallery_section}>
@@ -16,21 +13,13 @@ const Gallery = () => {
                     </TextType>
                 </div>
                 <SwiperContainer>
-                    <SwiperSlide>
-                        <div className={styles.slider}>
-                            <img src={logoRoomPhoto} alt="logoped room"/>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className={styles.slider}>
-                            <img src={sensorRoomPhoto} alt="sensor room"/>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className={styles.slider}>
-                            <img src={receptionPhoto} alt="recepion"/>
-                        </div>
-                    </SwiperSlide>
+                    {interiorPhotos.map((photo: string) => (
+                        <SwiperSlide>
+                            <div className={styles.slider}>
+                                <img src={photo} alt="room"/>
+                            </div>
+                        </SwiperSlide>
+                    ))}
                 </SwiperContainer>
             </div>
         </section>
