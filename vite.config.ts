@@ -6,6 +6,13 @@ export default defineConfig({
   plugins: [
     react()
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: () => 'everything.js'
+      }
+    }
+  },
   resolve: {
     alias: [
       { find: '@', replacement: path.resolve(__dirname, 'src') },

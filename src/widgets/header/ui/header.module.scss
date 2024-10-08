@@ -57,6 +57,10 @@
 
   .list {
     display: block;
+
+    ul li {
+      cursor: not-allowed;
+    }
   }
 
   .burger {

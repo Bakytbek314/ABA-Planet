@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aba-planet.vercel.app/sitemap.xml
+
+Disallow: /*.json$
+Disallow: /*.md$

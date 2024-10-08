@@ -1,6 +1,7 @@
 import {WorkerInfo} from "../types/workerInfoTypes.ts";
 import NiluPhoto from "../assets/images/nilu.webp";
-import ArukePhoto from "../assets/images/aru.webp"
+import ArukePhoto from "../assets/images/aru.webp";
+import AyshaPhoto from "../assets/images/aysha.webp";
 
 export const workerInfo: WorkerInfo[] = [
     {
@@ -13,7 +14,7 @@ export const workerInfo: WorkerInfo[] = [
     {
         id: 2,
         name: "Айша",
-        photo: "",
+        photo: AyshaPhoto,
         description: "ABA-специалист. Каждый ребенок уникален, и я верю, что даже самые маленькие шаги ведут к большим достижениям. Моя миссия -помогать детям развиваться и открывать мир через последовательную и поддерживающую терапию.",
         education: "https://proza.ru/pics/2022/04/29/1057.jpg"
     },
