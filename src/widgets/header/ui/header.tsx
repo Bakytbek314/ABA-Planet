@@ -42,7 +42,7 @@ const Header: FC = () => {
                     </nav>
                 </div>
             </header>
-            { isMenuOpen && <BurgerMenu onMenuClose={onMenuClose} /> }
+            {/*{ isMenuOpen && <BurgerMenu onMenuClose={onMenuClose} /> }*/}
         </>
     )
 }

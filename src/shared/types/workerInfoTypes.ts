@@ -3,5 +3,5 @@ export interface WorkerInfo {
     name: string;
     photo: {};
     description: string;
-    education: string;
+    education: {};
 }

@@ -1,5 +1,5 @@
 
 export interface WorkerEducationModalProps {
-    workerEducationLicense: string;
+    workerEducationLicense: HTMLImageElement;
     onModalClose: () => void;
 }

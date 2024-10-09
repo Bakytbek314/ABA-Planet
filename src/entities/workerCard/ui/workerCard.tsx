@@ -1,4 +1,4 @@
-import {SyntheticEvent, useState} from "react";
+import { useState} from "react";
 import classNames from "classnames";
 import {WorkerCardProps} from "./workerCard.props.ts";
 import TextType from "../../../shared/ui/textType/textType.tsx";

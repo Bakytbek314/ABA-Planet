@@ -9,9 +9,9 @@ import styles from "./ourTeam.module.scss";
 const OurTeam = () => {
 
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-    const [workerEducationLicense, setWorkerEducationLicense] = useState<string>("");
+    const [workerEducationLicense, setWorkerEducationLicense] = useState<HTMLImageElement>();
 
-    const onModalOpen = ( photo: string ): void => {
+    const onModalOpen = ( photo: HTMLImageElement ): void => {
         setIsModalOpen(!isModalOpen);
         setWorkerEducationLicense(photo);
     };
@@ -38,7 +38,7 @@ const OurTeam = () => {
                                         name={worker.name}
                                         photo={worker.photo as string}
                                         description={worker.description}
-                                        education={worker.education}
+                                        education={worker.education as HTMLImageElement}
                                         onModalOpen={onModalOpen}
                                         key={worker.id}
                                     />
@@ -50,7 +50,7 @@ const OurTeam = () => {
             </section>
             {isModalOpen &&
                 <WorkerEducationModal
-                    workerEducationLicense={workerEducationLicense}
+                    workerEducationLicense={workerEducationLicense as HTMLImageElement}
                     onModalClose={onModalClose}
                 />
             }
