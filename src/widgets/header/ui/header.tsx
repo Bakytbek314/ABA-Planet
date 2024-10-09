@@ -10,7 +10,7 @@ const Header: FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
     const onMenuOpen = () => {
-        setIsMenuOpen(!isMenuOpen);
+        // setIsMenuOpen(!isMenuOpen);
     };
 
     const onMenuClose = () => {
