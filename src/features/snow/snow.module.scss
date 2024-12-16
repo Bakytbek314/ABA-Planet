@@ -1,0 +1,35 @@
+.snow_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.snowflake {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  font-size: 1.5rem;
+  color: #00e0ff;
+  animation: fall linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh) translateX(0);
+  }
+  100% {
+    transform: translateY(100vh) translateX(calc(-20vw + 40vw * var(--random-offset)));
+  }
+}
+
+.snowflake {
+  left: calc(100% * var(--random-left));
+  animation-duration: calc(5s + 10s * var(--random-duration));
+  animation-delay: calc(-15s * var(--random-delay));
+}
